@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should handle current dates 1`] = `
+Object {
+  "date": Current Date,
+}
+`;
+
+exports[`Should handle non-current dates 1`] = `
+Object {
+  "date": 1-1-2018,
+}
+`;
+
+exports[`Should ignore non-date objects 1`] = `
+Object {
+  "notADate": Object {
+    "something": "else",
+  },
+}
+`;
+
+exports[`Should ignore non-objects 1`] = `
+Object {
+  "arr": Array [
+    "nope",
+    "nope",
+    "nope",
+  ],
+  "bool": true,
+  "num": 1,
+  "obj": Object {
+    "not": "an object",
+  },
+  "string": "string",
+  "undef": undefined,
+}
+`;

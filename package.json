@@ -1,0 +1,25 @@
+{
+    "name": "jest-serializer-date",
+    "version": "1.0.0",
+    "description": "Jest snapshot serializer to remove annoying Date object inconsistencies",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest --verbose"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/theruther4d/jest-serializer-date.git"
+    },
+    "author": "Josh Rutherford",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/theruther4d/jest-serializer-date/issues"
+    },
+    "homepage": "https://github.com/theruther4d/jest-serializer-date#readme",
+    "devDependencies": {
+        "jest": "^23.4.1"
+    },
+    "jest": {
+        "snapshotSerializers": ["./index.js"]
+    }
+}
