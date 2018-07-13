@@ -1,4 +1,7 @@
 # A Jest snapshot serializer that removes headaches when working with JavaScript Date objects
+[![NPM version](https://badge.fury.io/js/jest-serializer-date.svg)](https://npmjs.org/package/jest-serializer-date)
+[![Build Status](https://travis-ci.org/theruther4d/jest-serializer-date.svg?branch=master)](https://travis-ci.org/theruther4d/jest-serializer-date)
+
 When encountering a JavaScript Date object within a Jest snapshot, this serializer determines if the date corresponds to the current date (`new Date()`) or not. It then serializes them as follows:
 
 Current Date:
