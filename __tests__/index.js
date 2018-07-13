@@ -17,7 +17,9 @@ test('Should ignore non-objects', () => {
         undef: undefined,
         obj: {not: 'an object'},
         num: 1,
-        arr: ['nope', 'nope', 'nope']
+        arr: ['nope', 'nope', 'nope'],
+        null: null,
+        nan: NaN
     }
     expect(val).toMatchSnapshot()
 })

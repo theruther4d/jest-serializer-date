@@ -23,7 +23,7 @@ function isToday(date) {
 
 module.exports = {
     test: function (val) {
-        if (typeof val === 'object' && 'getFullYear' in val) {
+        if (val && typeof val === 'object' && 'getFullYear' in val) {
             return true;
         }
 

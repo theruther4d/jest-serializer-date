@@ -28,6 +28,8 @@ Object {
     "nope",
   ],
   "bool": true,
+  "nan": NaN,
+  "null": null,
   "num": 1,
   "obj": Object {
     "not": "an object",
