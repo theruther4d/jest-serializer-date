@@ -7,6 +7,10 @@ function extractValues(date) {
 }
 
 function isToday(date) {
+    if (typeof date === 'string') {
+        date = new Date(date);
+    }
+
     var today = extractValues(new Date());
     var value = extractValues(date);
 
@@ -23,6 +27,10 @@ function isToday(date) {
 
 module.exports = {
     test: function (val) {
+        if (val && typeof val === 'string' && /\d{4}-\d{2}-\d{2}T/.test(val)) {
+            return true;
+        }
+
         if (val && typeof val === 'object' && 'getFullYear' in val) {
             return true;
         }
